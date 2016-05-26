@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* iPhone 6: */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px)  {
+    #app {
+        width: 375px;
+        max-width: 375px;
+        height: 667px;
+        max-height: 667px;
+    }
+}
+
+/* iPhone 6 Plus: */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px)  {
+    #app {
+        width: 414px;
+        max-width: 414px;
+        height: 736px;
+        max-height: 736px;
+    }
+}
+
+#app .view-container {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.fade-enter {
+    opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity .5s ease-in;
+}
+
+.fade-leave {
+    opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+    opacity: 0.01;
+    transition: opacity .3s ease-in;
+}
